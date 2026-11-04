@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Youssef Reda — Full-Stack Developer using .NET</title>
+  <meta name="description" content="Portfolio of Youssef Reda, a Full-Stack Developer using .NET specializing in C#, ASP.NET Core, and SQL Server.">
+  <meta name="author" content="Youssef Reda">
+  <meta name="theme-color" content="#0B0E14" id="meta-theme-color">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Youssef Reda">
+  <meta property="og:title" content="Youssef Reda — Full-Stack Developer using .NET">
+  <meta property="og:description" content="Full-stack ASP.NET Core projects, backend development, and database work by Youssef Reda.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/images/profile.jpg" fetchpriority="high">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Youssef Reda",
+      "jobTitle": "Full-Stack Developer using .NET",
+      "email": "mailto:yr609927@gmail.com",
+      "knowsAbout": ["C#", ".NET", "ASP.NET Core", "Entity Framework Core", "SQL Server"],
+      "sameAs": [
+        "https://github.com/Yossef-Reda",
+        "https://www.linkedin.com/in/yossef-reda-hegazy-728a74334"
+      ]
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <noscript>
+    <style>
+      body .reveal, body .stagger-item, body .hero-anim, body .reveal-photo { opacity: 1; transform: none; }
+      body .skill-bar-fill { transform: scaleX(1); }
+    </style>
+  </noscript>
+</head>
+<body>
+<a href="#main" class="sr-only">Skip to main content</a>
+
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<div class="bg-blobs" aria-hidden="true">
+  <span class="bg-blob b1"></span>
+  <span class="bg-blob b2"></span>
+  <span class="bg-blob b3"></span>
+</div>
+<div class="cursor-glow" id="cursor-glow" aria-hidden="true"><span class="cursor-glow-dot" id="cursor-glow-dot"></span></div>
+
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="brand" aria-label="Youssef Reda, home">
+      YR<span class="dot">.</span>dev
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home" data-nav>Home</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#services" data-nav>Services</a>
+      <a href="#achievements" data-nav>Achievements</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button type="button" id="cv-download-nav" class="btn btn-outline btn-sm">CV</button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <svg id="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-panel" id="mobile-panel" aria-label="Mobile">
+    <a href="#home" data-nav>Home</a>
+    <a href="#about" data-nav>About</a>
+    <a href="#education" data-nav>Education</a>
+    <a href="#experience" data-nav>Experience</a>
+    <a href="#skills" data-nav>Skills</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#services" data-nav>Services</a>
+    <a href="#achievements" data-nav>Achievements</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow hero-anim d1"><span class="pulse"></span> Available for backend work</span>
+        <h1 class="hero-anim d2">Hello, I'm <span class="name">Youssef Reda</span></h1>
+        <p class="role hero-anim d3"><span class="sr-only">Full-Stack Developer using .NET</span><span class="role-typed" aria-hidden="true">Full-Stack Developer using .NET</span><span class="type-cursor" aria-hidden="true"></span></p>
+        <div class="hero-actions hero-anim d4">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <button type="button" id="cv-download" class="btn btn-outline">CV</button>
+        </div>
+      </div>
+
+      <div class="photo-frame reveal-photo">
+        <div class="photo-ring"></div>
+        <img alt="Youssef Reda, Back-End .NET Developer" class="photo-img" width="1086" height="1448" decoding="async" loading="eager" fetchpriority="high" src="assets/images/profile.jpg">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">01 — About</span>
+        <h2>Backend logic, done properly</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a Full-Stack .NET trainee at the Digital Egypt Pioneers Initiative (DEPI) and a Computer Science undergraduate at Minufiya University, with a solid foundation in C# and Object-Oriented Programming. I like solving problems at the data and logic layer — designing schemas, writing APIs, and keeping code readable for whoever touches it next.</p>
+          <p>I'm still early in my professional journey, and I'm upfront about that: what you'll find here is real coursework, practical exercises, and projects — not inflated claims.</p>
+          <div class="focus-list">
+            <div class="focus-item"><span class="mark">▹</span> Writing clean, testable C# and following OOP principles</div>
+            <div class="focus-item"><span class="mark">▹</span> Designing relational schemas and querying them efficiently</div>
+            <div class="focus-item"><span class="mark">▹</span> Building REST APIs with ASP.NET Core and Entity Framework Core</div>
+          </div>
+        </div>
+        <div class="about-side reveal">
+          <div class="card">
+            <h4>Currently working with</h4>
+            <div class="chip-row">
+              <span class="chip">C#</span><span class="chip">.NET</span><span class="chip">ASP.NET Core</span>
+              <span class="chip">SQL Server</span><span class="chip">EF Core</span><span class="chip">Python</span>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Learning goals</h4>
+            <div class="chip-row">
+              <span class="chip">Clean Architecture</span><span class="chip">Design Patterns</span><span class="chip">Cloud Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">02 — Education</span>
+        <h2>Academic background</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="t-item">
+          <span class="t-date">Expected Sep 2028</span>
+          <h3>B.Sc. Mathematics and Computer Science</h3>
+          <p class="t-sub">Minufiya University — Menoufia, Egypt</p>
+          <p class="t-body">Relevant coursework: Object-Oriented Programming (Basic &amp; Advanced), Programming Fundamentals, Mathematics, Computer Science Theory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">03 — Experience</span>
+        <h2>Learning journey &amp; practical experience</h2>
+        <p>Hands-on training and coursework-based practice in full-stack .NET development.</p>
+      </div>
+      <div class="timeline reveal">
+        <div class="t-item">
+          <span class="t-date">Aug 2026 – Present</span>
+          <h3>Full-Stack .NET Trainee</h3>
+          <p class="t-sub">Digital Egypt Pioneers Initiative (DEPI) — Egypt</p>
+          <p class="t-body">Selected for a competitive, government-backed technology training initiative focused on full-stack .NET development. Applying C# and Object-Oriented Programming (basic &amp; advanced) to hands-on coding exercises, and practicing problem-solving daily through structured, project-based coursework alongside a cohort of trainees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">04 — Skills</span>
+        <h2>Technical toolkit</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-cat">
+          <h3>Programming</h3>
+          <div class="skill-bar" aria-hidden="true"><span class="skill-bar-fill" style="--val: 88%; --delay: 0ms"></span></div>
+          <div class="skill-tags">
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Object-Oriented Programming</span>
+            <span class="skill-tag">Data Structures Fundamentals</span>
+            <span class="skill-tag">Problem Solving</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <h3>Backend Development</h3>
+          <div class="skill-bar" aria-hidden="true"><span class="skill-bar-fill" style="--val: 80%; --delay: 120ms"></span></div>
+          <div class="skill-tags">
+            <span class="skill-tag">.NET</span>
+            <span class="skill-tag">ASP.NET Core</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Entity Framework Core</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <h3>Database</h3>
+          <div class="skill-bar" aria-hidden="true"><span class="skill-bar-fill" style="--val: 75%; --delay: 240ms"></span></div>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Database Design</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <h3>Frontend Basics</h3>
+          <div class="skill-bar" aria-hidden="true"><span class="skill-bar-fill" style="--val: 60%; --delay: 360ms"></span></div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">05 — Projects</span>
+        <h2>Selected work</h2>
+        <p>Full-stack ASP.NET Core applications built end to end — from database design and business logic to the user interface.</p>
+      </div>
+      <div class="projects-grid reveal">
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="assets/images/project-student-platform.svg" alt="Student Platform dashboard cover" width="800" height="320" loading="lazy" decoding="async"></div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3>Student Platform</h3>
+              <span class="status-badge status-done">Completed</span>
+            </div>
+            <p class="desc">A role-based learning platform built with ASP.NET Core MVC and EF Core. Teachers create lectures and assignments, review student submissions with uploaded files, and track activity from a dashboard; students log in, browse assignments, and submit their work. Authentication and roles (Teacher/Student) are handled with ASP.NET Core Identity.</p>
+            <div class="project-tech"><span>ASP.NET Core MVC</span><span>C#</span><span>EF Core</span><span>Identity</span><span>SQLite</span></div>
+            <div class="project-links">
+              <a href="https://github.com/Yossef-Reda/StudentPlatform" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View repository</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="assets/images/project-inventory.svg" alt="Inventory Management System dashboard cover" width="800" height="320" loading="lazy" decoding="async"></div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3>Inventory Management System</h3>
+              <span class="status-badge status-done">Completed</span>
+            </div>
+            <p class="desc">A full inventory management web app covering products, categories, suppliers, purchases, and sales. Includes a dashboard with KPI cards and period-over-period trend comparisons, low-stock and out-of-stock alerts, product image upload, and printable sales receipts — all backed by SQL Server and EF Core.</p>
+            <div class="project-tech"><span>ASP.NET Core MVC</span><span>C#</span><span>EF Core</span><span>SQL Server</span><span>Bootstrap</span></div>
+            <div class="project-links">
+              <a href="https://github.com/Yossef-Reda/InventoryManagementSystem" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View repository</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">06 — Services</span>
+        <h2>What I can help with</h2>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+          <h3>ASP.NET Core Web API Development</h3>
+          <p>Building backend APIs with C# and ASP.NET Core, at a practical, student-project level.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></div>
+          <h3>Database Development</h3>
+          <p>Designing and working with relational databases in SQL Server.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+          <h3>Backend Bug Fixing</h3>
+          <p>Troubleshooting and resolving issues in C# / .NET backend code.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 17l6-6-6-6M12 19h8"/></svg></div>
+          <h3>API Integration</h3>
+          <p>Connecting frontend interfaces with backend APIs where the required skills apply.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <h3>CRUD Application Development</h3>
+          <p>Building applications to create, read, update, and delete data with .NET and SQL Server.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">07 — Achievements</span>
+        <h2>Courses &amp; milestones</h2>
+      </div>
+      <div class="ach-grid reveal">
+        <div class="ach-card">
+          <h3>Object-Oriented Programming — Basic &amp; Advanced</h3>
+          <p>Completed both levels of OOP coursework using C#, covering classes, inheritance, polymorphism, and encapsulation.</p>
+        </div>
+        <div class="ach-card">
+          <h3>Programming Fundamentals — Python &amp; C#</h3>
+          <p>Built a solid foundation in programming logic, data structures, and problem-solving through coursework in Python and C#.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">08 — Contact</span>
+        <h2>Let's talk</h2>
+        <p>The fastest way to reach me is WhatsApp. The form below is a demo — it doesn't send an email yet.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-role">Back-End .NET Developer · Egypt</p>
+          <p class="contact-label">Find me on</p>
+          <div class="contact-social">
+            <a class="social-btn social-whatsapp" href="https://wa.me/201066675521" target="_blank" rel="noopener noreferrer" data-link="whatsapp" data-label="WhatsApp" aria-label="Contact via WhatsApp" title="Contact via WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.5-1.79-1.68-2.09-.18-.2-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.26-.25-.6-.5-.5-.68-.51h-.58c-.2 0-.53.07-.8.38-.28.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.01 2C6.5 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.53 2 12.01 2zm0 18.15a8.1 8.1 0 0 1-4.14-1.13l-.3-.18-3 .79.8-2.92-.2-.3a8.13 8.13 0 1 1 6.84 3.74z"/></svg>
+            </a>
+            <a class="social-btn" href="mailto:yr609927@gmail.com" data-link="email" data-label="Email" aria-label="Send an email" title="Send an email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            </a>
+            <a class="social-btn" href="https://github.com/Yossef-Reda" target="_blank" rel="noopener noreferrer" data-link="github" data-label="GitHub" aria-label="View GitHub profile" title="View GitHub profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2z"/></svg>
+            </a>
+            <a class="social-btn" href="https://www.linkedin.com/in/yossef-reda-hegazy-728a74334?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" data-link="linkedin" data-label="LinkedIn" aria-label="View LinkedIn profile" title="View LinkedIn profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </a>
+            <a class="social-btn" href="https://www.facebook.com/share/1HmTcKsLZv/" target="_blank" rel="noopener noreferrer" data-link="facebook" data-label="Facebook" aria-label="View Facebook profile" title="View Facebook profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.6h2.55l.38-2.96h-2.93V8.55c0-.86.24-1.44 1.47-1.44h1.57V4.46c-.27-.04-1.2-.12-2.28-.12-2.26 0-3.8 1.38-3.8 3.9v2.18H8v2.96h2.46V21h3.04z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="card reveal" id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required aria-describedby="err-name">
+              <span class="err" id="err-name" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required aria-describedby="err-email">
+              <span class="err" id="err-email" aria-live="polite"></span>
+            </div>
+            <div class="field full">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" required aria-describedby="err-subject">
+              <span class="err" id="err-subject" aria-live="polite"></span>
+            </div>
+            <div class="field full">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required aria-describedby="err-message"></textarea>
+              <span class="err" id="err-message" aria-live="polite"></span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send message</button>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand">YR<span class="dot">.</span>dev</div>
+        <p class="role">Back-End .NET Developer</p>
+      </div>
+      <div class="footer-social">
+        <a class="icon-btn" href="https://www.linkedin.com/in/yossef-reda-hegazy-728a74334?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" data-link="linkedin" target="_blank" rel="noopener noreferrer" aria-label="Youssef Reda on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.facebook.com/share/1HmTcKsLZv/" data-link="facebook" target="_blank" rel="noopener noreferrer" aria-label="Youssef Reda on Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.6h2.55l.38-2.96h-2.93V8.55c0-.86.24-1.44 1.47-1.44h1.57V4.46c-.27-.04-1.2-.12-2.28-.12-2.26 0-3.8 1.38-3.8 3.9v2.18H8v2.96h2.46V21h3.04z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://wa.me/201066675521" data-link="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with Youssef Reda on WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.5-1.79-1.68-2.09-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.26-.25-.6-.5-.5-.68-.51h-.58c-.2 0-.53.07-.8.38-.28.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.01 2C6.5 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.53 2 12.01 2zm0 18.15a8.1 8.1 0 0 1-4.14-1.13l-.3-.18-3 .79.8-2.92-.2-.3a8.13 8.13 0 1 1 6.84 3.74z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://github.com/Yossef-Reda" data-link="github" target="_blank" rel="noopener noreferrer" aria-label="Youssef Reda on GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.64.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2z"/></svg>
+        </a>
+        <a class="icon-btn" href="mailto:yr609927@gmail.com" data-link="email" aria-label="Email Youssef Reda">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Youssef Reda. All Rights Reserved.</span>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Application entry point -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
