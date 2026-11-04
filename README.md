@@ -47,7 +47,13 @@ portfolio/
 
 ## Run locally
 
-The JavaScript uses native ES modules, so the site must be served over HTTP (opening `index.html` directly with `file://` will block module imports).
+The JavaScript uses native ES modules, so the site must be served over HTTP. Opening `index.html` directly with `file://` makes the browser block module imports (the page will look partly empty and the buttons will not work).
+
+### Windows: one click
+
+Double-click **`start-local.bat`**. It starts a local server and opens <http://localhost:8080> in your browser. Close the minimized "Portfolio local server" window to stop it.
+
+### Any platform: terminal
 
 ```bash
 # Python 3
